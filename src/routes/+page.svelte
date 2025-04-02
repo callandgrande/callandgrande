@@ -26,13 +26,13 @@
 					</p>
 					<div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
 						<a
-							href="#"
+							href="/pricing"
 							class="w-full rounded-md bg-purple-600 px-6 py-3 text-center transition hover:bg-purple-700 sm:w-auto"
 						>
 							Get Started
 						</a>
 						<a
-							href="#"
+							href="/contact"
 							class="w-full rounded-md border border-indigo-600 px-6 py-3 text-center transition hover:border-purple-400 sm:w-auto"
 						>
 							Talk to Sales

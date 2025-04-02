@@ -15,7 +15,7 @@
 </section>
 
 <!-- Our Story Section -->
-<section class="bg-indigo-950/30 px-4 py-16 backdrop-blur-sm md:py-24">
+<section class="px-4 py-16 backdrop-blur-sm md:py-24">
 	<div class="container mx-auto max-w-6xl">
 		<div class="flex flex-col items-center gap-16 md:flex-row">
 			<div class="order-2 md:order-1 md:w-1/2">
@@ -89,7 +89,7 @@
 </section>
 
 <!-- Team Section -->
-<section class="bg-indigo-950/30 px-4 py-16 backdrop-blur-sm md:py-24">
+<section class="px-4 py-16 backdrop-blur-sm md:py-24">
 	<div class="container mx-auto max-w-6xl">
 		<h2 class="mb-12 text-center text-3xl font-bold">Meet Our Leadership</h2>
 		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">

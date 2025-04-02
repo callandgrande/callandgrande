@@ -1,7 +1,7 @@
 <!-- src/routes/pricing/+page.svelte -->
 <script>
-	// Toggle for annual pricing
-	let isAnnual = $state(false);
+	// Toggle for annual pricing - using standard let binding
+	let isAnnual = false;
 
 	// Function to toggle pricing
 	function togglePricing() {
@@ -26,18 +26,17 @@
 		<div class="flex items-center justify-center space-x-4">
 			<span class={!isAnnual ? 'font-medium' : 'text-gray-400'}>Monthly</span>
 			<button
-				aria-label="monthly-pricing"
-				class="relative h-7 w-14 rounded-full bg-indigo-950/60 p-1"
-				onclick={togglePricing}
+				type="button"
+				aria-label="Toggle annual pricing"
+				class="relative h-7 w-14 cursor-pointer rounded-full bg-purple-900/70 p-1"
+				on:click={togglePricing}
 			>
 				<div
-					class="absolute h-5 w-5 rounded-full bg-purple-600 transition-all duration-300"
-					style={isAnnual ? 'transform: translateX(28px)' : ''}
+					class="absolute top-1/2 h-5 w-5 rounded-full bg-purple-600 transition-all duration-300"
+					style={`transform: translateX(${isAnnual ? '28px' : '0px'}) translateY(-50%)`}
 				></div>
 			</button>
-			<span class={isAnnual ? 'font-medium' : 'text-gray-400'}
-				>Annual <span class="text-sm text-purple-400">(Save 20%)</span></span
-			>
+			<span class={isAnnual ? 'font-medium' : 'text-gray-400'}> Annual </span>
 		</div>
 	</div>
 </section>
@@ -173,7 +172,7 @@
 </section>
 
 <!-- FAQ Section -->
-<section class="px-4 py-16 backdrop-blur-sm md:py-24">
+<section class="px-4 py-16 md:py-24">
 	<div class="container mx-auto max-w-4xl">
 		<h2 class="mb-12 text-center text-3xl font-bold">Frequently Asked Questions</h2>
 

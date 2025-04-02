@@ -19,7 +19,7 @@
 			dots.push({
 				x: Math.random() * width,
 				y: Math.random() * height,
-				radius: Math.random() * 1.5 + 0.5,
+				radius: Math.random() * 1.5 + 1.5,
 				vx: Math.random() * 0.5 - 0.25,
 				vy: Math.random() * 0.5 - 0.25,
 				opacity: Math.random() * 0.5 + 0.1
@@ -70,7 +70,7 @@
 
 <main class="relative min-h-screen overflow-hidden text-white">
 	<!-- Gradient background -->
-	<div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-indigo-950 to-purple-900"></div>
+	<div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-indigo-950 to-purple-950"></div>
 
 	<!-- Animated dots canvas - now fixed position to cover entire scrollable area -->
 	<canvas bind:this={canvas} class="fixed inset-0 z-0 opacity-50"></canvas>
@@ -98,58 +98,155 @@
 		<!-- Main content -->
 		{@render children()}
 
-		<!-- Footer -->
-		<footer class="bg-gray-800/80 py-12 backdrop-blur-sm">
-			<div class="container mx-auto px-6">
-				<div class="flex flex-col justify-between md:flex-row">
-					<div class="mb-8 md:mb-0">
-						<h3 class="mb-4 text-xl font-bold">Call & Grande</h3>
-						<p class="max-w-xs text-gray-400">
-							Specialized AI consulting services and professional implementation.
-						</p>
+		<!-- Footer with elegant separator line -->
+		<footer class="py-16 backdrop-blur-sm">
+			<!-- Option 1: Fading line separator -->
+			<div class="container mx-auto mb-16 px-6">
+				<div class="relative">
+					<div class="absolute inset-0 flex items-center">
+						<div
+							class="h-px w-full border-t border-purple-700/70 bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"
+						></div>
 					</div>
-					<div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+				</div>
+			</div>
+
+			<div class="container mx-auto px-6">
+				<!-- Main Footer Content -->
+				<div class="flex flex-col justify-between gap-12 md:flex-row">
+					<!-- Company Info -->
+					<div class="md:w-1/3">
+						<div class="mb-6">
+							<h3
+								class="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-2xl font-bold text-transparent"
+							>
+								Call & Grande
+							</h3>
+						</div>
+						<p class="mb-6 max-w-xs text-gray-300">
+							Specialized AI consulting services helping businesses implement practical AI
+							strategies that drive measurable results.
+						</p>
+						<!-- Social Links -->
+						<div class="flex space-x-4">
+							<a
+								href="#"
+								class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-900/60 transition hover:bg-purple-600"
+							>
+								<div class="h-5 w-5 rounded-full bg-gray-300"></div>
+							</a>
+							<a
+								href="#"
+								class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-900/60 transition hover:bg-purple-600"
+							>
+								<div class="h-5 w-5 rounded-full bg-gray-300"></div>
+							</a>
+							<a
+								href="#"
+								class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-900/60 transition hover:bg-purple-600"
+							>
+								<div class="h-5 w-5 rounded-full bg-gray-300"></div>
+							</a>
+						</div>
+					</div>
+
+					<!-- Navigation Links -->
+					<div class="grid grid-cols-2 gap-8 md:w-2/3 md:grid-cols-4">
 						<div>
-							<h4 class="mb-4 text-lg font-semibold">Company</h4>
-							<ul class="space-y-2">
-								<li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
-								<li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
-								<li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+							<h4 class="mb-4 text-lg font-semibold text-white">Company</h4>
+							<ul class="space-y-3">
+								<li>
+									<a href="/about" class="text-gray-300 transition hover:text-purple-400">About</a>
+								</li>
+								<li>
+									<a href="/careers" class="text-gray-300 transition hover:text-purple-400"
+										>Careers</a
+									>
+								</li>
+								<li>
+									<a href="/blog" class="text-gray-300 transition hover:text-purple-400">Blog</a>
+								</li>
 							</ul>
 						</div>
 						<div>
-							<h4 class="mb-4 text-lg font-semibold">Services</h4>
-							<ul class="space-y-2">
-								<li><a href="#" class="text-gray-400 hover:text-white">Strategy</a></li>
-								<li><a href="#" class="text-gray-400 hover:text-white">Implementation</a></li>
-								<li><a href="#" class="text-gray-400 hover:text-white">Support</a></li>
+							<h4 class="mb-4 text-lg font-semibold text-white">Solutions</h4>
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="/solutions#strategy"
+										class="text-gray-300 transition hover:text-purple-400">Strategy</a
+									>
+								</li>
+								<li>
+									<a
+										href="/solutions#development"
+										class="text-gray-300 transition hover:text-purple-400">Development</a
+									>
+								</li>
+								<li>
+									<a
+										href="/solutions#implementation"
+										class="text-gray-300 transition hover:text-purple-400">Implementation</a
+									>
+								</li>
 							</ul>
 						</div>
 						<div>
-							<h4 class="mb-4 text-lg font-semibold">Resources</h4>
-							<ul class="space-y-2">
-								<li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
-								<li><a href="#" class="text-gray-400 hover:text-white">Case Studies</a></li>
-								<li><a href="#" class="text-gray-400 hover:text-white">Guides</a></li>
+							<h4 class="mb-4 text-lg font-semibold text-white">Resources</h4>
+							<ul class="space-y-3">
+								<li>
+									<a href="/resources" class="text-gray-300 transition hover:text-purple-400"
+										>Case Studies</a
+									>
+								</li>
+								<li>
+									<a href="/resources#guides" class="text-gray-300 transition hover:text-purple-400"
+										>Guides</a
+									>
+								</li>
+								<li>
+									<a href="/resources#faq" class="text-gray-300 transition hover:text-purple-400"
+										>FAQ</a
+									>
+								</li>
 							</ul>
 						</div>
 						<div>
-							<h4 class="mb-4 text-lg font-semibold">Contact</h4>
-							<ul class="space-y-2">
-								<li><a href="#" class="text-gray-400 hover:text-white">Email</a></li>
-								<li><a href="#" class="text-gray-400 hover:text-white">Support</a></li>
-								<li><a href="#" class="text-gray-400 hover:text-white">Social</a></li>
+							<h4 class="mb-4 text-lg font-semibold text-white">Contact</h4>
+							<ul class="space-y-3">
+								<li>
+									<a href="/contact" class="text-gray-300 transition hover:text-purple-400"
+										>Get in Touch</a
+									>
+								</li>
+								<li>
+									<a
+										href="mailto:info@callandgrande.com"
+										class="text-gray-300 transition hover:text-purple-400">info@callandgrande.com</a
+									>
+								</li>
+								<li>
+									<a href="tel:+14155550123" class="text-gray-300 transition hover:text-purple-400"
+										>+1 (415) 555-0123</a
+									>
+								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
+
+				<!-- Footer Bottom -->
 				<div
-					class="mt-12 flex flex-col items-center justify-between border-t border-gray-700 pt-8 md:flex-row"
+					class="mt-16 flex flex-col items-center justify-between border-t border-indigo-800/30 pt-8 md:flex-row"
 				>
-					<p class="text-gray-400">© 2025 Call & Grande. All rights reserved.</p>
-					<div class="mt-4 flex space-x-6 md:mt-0">
-						<a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
-						<a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+					<p class="mb-4 text-gray-400 md:mb-0">© 2025 Call & Grande. All rights reserved.</p>
+					<div class="flex space-x-8">
+						<a href="/privacy" class="text-gray-300 transition hover:text-purple-400"
+							>Privacy Policy</a
+						>
+						<a href="/terms" class="text-gray-300 transition hover:text-purple-400"
+							>Terms of Service</a
+						>
 					</div>
 				</div>
 			</div>
