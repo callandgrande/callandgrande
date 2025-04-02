@@ -83,14 +83,13 @@
 				<h1 class="text-xl font-bold">Call & Grande</h1>
 			</div>
 			<div class="hidden space-x-8 md:flex">
-				<a href="#" class="transition hover:text-purple-400">Solutions</a>
-				<a href="#" class="transition hover:text-purple-400">Pricing</a>
-				<a href="#" class="transition hover:text-purple-400">About</a>
-				<a href="#" class="transition hover:text-purple-400">Contact</a>
+				<a href="/solutions" class="transition hover:text-purple-400">Solutions</a>
+				<a href="/pricing" class="transition hover:text-purple-400">Pricing</a>
+				<a href="/about" class="transition hover:text-purple-400">About</a>
+				<a href="/contact" class="transition hover:text-purple-400">Contact</a>
 			</div>
 			<div class="flex items-center space-x-4">
-				<a href="#" class="transition hover:text-purple-400">Sign In</a>
-				<a href="#" class="rounded-md bg-purple-600 px-4 py-2 transition hover:bg-purple-700"
+				<a href="/contact" class="rounded-md bg-purple-600 px-4 py-2 transition hover:bg-purple-700"
 					>Get Started</a
 				>
 			</div>
