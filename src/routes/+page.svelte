@@ -1,18 +1,17 @@
-<!-- src/routes/+page.svelte -->
 <script>
-	// You can add your navigation logic here
+	import Globe from '$lib/components/Globe.svelte';
 </script>
 
 <!-- Main content -->
 <div class="flex flex-col">
-	<!-- Hero Section - Responsive height -->
+	<!-- Hero Section - With improved spacing between text and globe -->
 	<section
 		class="px-4 py-12 md:px-6 md:py-0"
 		style="min-height: 80vh; display: flex; align-items: center;"
 	>
-		<div class="container mx-auto max-w-6xl">
-			<div class="flex flex-col-reverse md:flex-row md:items-center">
-				<div class="mt-8 md:mt-0 md:w-1/2">
+		<div class="container mx-auto max-w-7xl">
+			<div class="flex flex-col-reverse gap-16 md:flex-row md:items-center md:gap-28">
+				<div class="mt-8 md:mt-0 md:w-5/12">
 					<h2 class="text-4xl leading-tight font-bold md:text-5xl">
 						Unlock the
 						<span
@@ -41,12 +40,11 @@
 					</div>
 					<p class="mt-6 text-gray-400">Starting at $1500.00</p>
 				</div>
-				<div class="flex justify-center md:w-1/2">
-					<!-- Hero image placeholder - responsive size -->
-					<div
-						class="flex h-56 w-56 items-center justify-center rounded-full bg-gradient-to-br from-indigo-800 to-purple-900 md:h-72 md:w-72"
-					>
-						<div class="h-3/4 w-3/4 rounded-full bg-gray-900 opacity-70"></div>
+				<div class="flex items-center justify-center md:w-7/12 md:pl-12">
+					<div class="relative h-[400px] w-full max-w-[400px] md:h-[500px] md:max-w-[500px]">
+						<Globe
+							class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-110 transform"
+						/>
 					</div>
 				</div>
 			</div>
