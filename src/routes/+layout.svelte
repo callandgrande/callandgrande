@@ -79,9 +79,9 @@
 	<div class="relative z-10">
 		<!-- Navigation -->
 		<nav class="container mx-auto flex items-center justify-between px-6 py-4">
-			<div class="flex items-center">
-				<h1 class="text-xl font-bold">Call & Grande</h1>
-			</div>
+			<a href="/" class="flex items-center">
+				<img src="images/logo.png" width="120" alt="logo" />
+			</a>
 			<div class="hidden space-x-8 md:flex">
 				<a href="/solutions" class="transition hover:text-purple-400">Solutions</a>
 				<a href="/pricing" class="transition hover:text-purple-400">Pricing</a>
@@ -117,11 +117,7 @@
 					<!-- Company Info -->
 					<div class="md:w-1/3">
 						<div class="mb-6">
-							<h3
-								class="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-2xl font-bold text-transparent"
-							>
-								Call & Grande
-							</h3>
+							<img src="images/logo.png" width="150" alt="logo" />
 						</div>
 						<p class="mb-6 max-w-xs text-gray-300">
 							Specialized AI consulting services helping businesses implement practical AI

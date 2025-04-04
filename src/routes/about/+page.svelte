@@ -37,13 +37,8 @@
 			</div>
 			<div class="order-1 mb-8 md:order-2 md:mb-0 md:w-1/2">
 				<!-- Placeholder for team image -->
-				<div
-					class="flex h-80 w-full items-center justify-center rounded-lg bg-gradient-to-br from-indigo-800 to-purple-900 md:h-96"
-				>
-					<div class="text-center">
-						<div class="mx-auto mb-4 h-16 w-16 rounded-full bg-purple-600"></div>
-						<p class="text-lg font-medium">Our Team</p>
-					</div>
+				<div class="text-center">
+					<img src="images/logo.png" alt="logo" />
 				</div>
 			</div>
 		</div>
@@ -57,7 +52,6 @@
 		<div class="grid gap-8 md:grid-cols-3">
 			<!-- Value 1 -->
 			<div class="rounded-lg border border-purple-900/30 bg-indigo-950/40 p-8 backdrop-blur-sm">
-				<div class="mb-6 h-12 w-12 rounded-md bg-purple-600"></div>
 				<h3 class="mb-4 text-xl font-bold">Practical Innovation</h3>
 				<p class="text-gray-300">
 					We believe AI should solve real problems. We focus on implementations that deliver
@@ -67,7 +61,6 @@
 
 			<!-- Value 2 -->
 			<div class="rounded-lg border border-purple-900/30 bg-indigo-950/40 p-8 backdrop-blur-sm">
-				<div class="mb-6 h-12 w-12 rounded-md bg-indigo-600"></div>
 				<h3 class="mb-4 text-xl font-bold">Ethical Excellence</h3>
 				<p class="text-gray-300">
 					We commit to responsible AI practices, ensuring our solutions respect privacy, reduce
@@ -77,7 +70,6 @@
 
 			<!-- Value 3 -->
 			<div class="rounded-lg border border-purple-900/30 bg-indigo-950/40 p-8 backdrop-blur-sm">
-				<div class="mb-6 h-12 w-12 rounded-md bg-purple-500"></div>
 				<h3 class="mb-4 text-xl font-bold">Client Partnership</h3>
 				<p class="text-gray-300">
 					We view ourselves as strategic partners in your AI journey, focusing on knowledge transfer
@@ -92,53 +84,25 @@
 <section class="px-4 py-16 backdrop-blur-sm md:py-24">
 	<div class="container mx-auto max-w-6xl">
 		<h2 class="mb-12 text-center text-3xl font-bold">Meet Our Leadership</h2>
-		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
 			<!-- Team Member 1 -->
 			<div class="text-center">
 				<!-- Placeholder for team member photo -->
-				<div
-					class="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-full bg-gradient-to-br from-indigo-800 to-purple-900"
-				>
-					<div class="h-10 w-10 rounded-full bg-purple-600"></div>
+				<div class="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-full">
+					<img src="images/headshots/joseph.jpg" alt="Joseph Headshot" class="rounded-full" />
 				</div>
-				<h3 class="text-xl font-bold">Sarah Call</h3>
-				<p class="text-gray-400">Co-Founder & CEO</p>
+				<h3 class="text-xl font-bold">Joseph Call</h3>
+				<p class="text-gray-400">Co-Founder & Managing Partner</p>
 			</div>
 
 			<!-- Team Member 2 -->
 			<div class="text-center">
 				<!-- Placeholder for team member photo -->
-				<div
-					class="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-full bg-gradient-to-br from-indigo-800 to-purple-900"
-				>
-					<div class="h-10 w-10 rounded-full bg-indigo-600"></div>
+				<div class="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-full">
+					<img src="images/headshots/alvaro.jpg" alt="Martin Headshot" class="rounded-full" />
 				</div>
-				<h3 class="text-xl font-bold">Miguel Grande</h3>
-				<p class="text-gray-400">Co-Founder & CTO</p>
-			</div>
-
-			<!-- Team Member 3 -->
-			<div class="text-center">
-				<!-- Placeholder for team member photo -->
-				<div
-					class="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-full bg-gradient-to-br from-indigo-800 to-purple-900"
-				>
-					<div class="h-10 w-10 rounded-full bg-purple-500"></div>
-				</div>
-				<h3 class="text-xl font-bold">Elena Chen</h3>
-				<p class="text-gray-400">AI Strategy Director</p>
-			</div>
-
-			<!-- Team Member 4 -->
-			<div class="text-center">
-				<!-- Placeholder for team member photo -->
-				<div
-					class="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-full bg-gradient-to-br from-indigo-800 to-purple-900"
-				>
-					<div class="h-10 w-10 rounded-full bg-indigo-500"></div>
-				</div>
-				<h3 class="text-xl font-bold">David Park</h3>
-				<p class="text-gray-400">Implementation Lead</p>
+				<h3 class="text-xl font-bold">Martin Grande</h3>
+				<p class="text-gray-400">Co-Founder & Managing Partner</p>
 			</div>
 		</div>
 	</div>
@@ -153,13 +117,13 @@
 		</p>
 		<div class="flex flex-col justify-center gap-4 sm:flex-row">
 			<a
-				href="#"
+				href="/contact"
 				class="w-full rounded-md bg-purple-600 px-6 py-3 text-center transition hover:bg-purple-700 sm:w-auto"
 			>
 				Schedule a Consultation
 			</a>
 			<a
-				href="#"
+				href="/solutions"
 				class="w-full rounded-md border border-indigo-600 px-6 py-3 text-center transition hover:border-purple-400 sm:w-auto"
 			>
 				View Our Case Studies
