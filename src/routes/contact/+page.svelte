@@ -1,6 +1,9 @@
 <!-- src/routes/contact/+page.svelte -->
 <script>
-	// Simple form handling - you can expand this as needed
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+
+	// Form data
 	let name = '';
 	let email = '';
 	let company = '';
@@ -8,6 +11,17 @@
 	let submitting = false;
 	let submitted = false;
 	let error = '';
+
+	// Check for URL parameters on mount
+	onMount(() => {
+		// Get email from URL query parameter if it exists
+		const urlParams = $page.url.searchParams;
+		const emailParam = urlParams.get('email');
+
+		if (emailParam) {
+			email = emailParam;
+		}
+	});
 
 	const handleSubmit = () => {
 		submitting = true;
@@ -41,24 +55,6 @@
 <section class="px-4 py-8 md:py-12">
 	<div class="container mx-auto max-w-6xl">
 		<div class="grid gap-8 md:grid-cols-3">
-			<!-- Address -->
-			<div
-				class="rounded-lg border border-purple-900/30 bg-indigo-950/40 p-6 text-center backdrop-blur-sm"
-			>
-				<div
-					class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-purple-600"
-				>
-					<div class="h-6 w-6 rounded-sm bg-white"></div>
-					<!-- Simple location icon placeholder -->
-				</div>
-				<h3 class="mb-2 text-xl font-bold">Our Office</h3>
-				<p class="text-gray-300">
-					123 Tech Avenue<br />
-					San Francisco, CA 94107<br />
-					United States
-				</p>
-			</div>
-
 			<!-- Email -->
 			<div
 				class="rounded-lg border border-purple-900/30 bg-indigo-950/40 p-6 text-center backdrop-blur-sm"
@@ -70,8 +66,8 @@
 					<!-- Simple email icon placeholder -->
 				</div>
 				<h3 class="mb-2 text-xl font-bold">Email Us</h3>
-				<p class="mb-2 text-gray-300">info@callandgrande.com</p>
-				<p class="text-gray-300">support@callandgrande.com</p>
+				<p class="mb-2 text-gray-300">info@callgran.com</p>
+				<p class="text-gray-300">support@callgran.com</p>
 			</div>
 
 			<!-- Phone -->
@@ -85,8 +81,9 @@
 					<!-- Simple phone icon placeholder -->
 				</div>
 				<h3 class="mb-2 text-xl font-bold">Call Us</h3>
-				<p class="mb-2 text-gray-300">+1 (415) 555-0123</p>
-				<p class="text-gray-300">Monday - Friday, 9am - 5pm PST</p>
+				<p class="mb-2 text-gray-300">+1 (757) 570-6407</p>
+				<p class="mb-2 text-gray-300">+1 (618) 703-5999</p>
+				<p class="text-gray-300">24/7 Support</p>
 			</div>
 		</div>
 	</div>
@@ -165,24 +162,6 @@
 					</form>
 				{/if}
 			</div>
-
-			<!-- Map Placeholder -->
-			<div class="lg:w-1/2">
-				<h2 class="mb-8 text-3xl font-bold">Find Us</h2>
-				<div
-					class="flex h-96 w-full items-center justify-center rounded-lg bg-gradient-to-br from-indigo-800 to-purple-900"
-				>
-					<div class="text-center">
-						<div class="mx-auto mb-4 h-16 w-16">
-							<!-- Simple map pin placeholder -->
-							<div class="mx-auto h-8 w-8 rounded-full bg-purple-600"></div>
-							<div class="mx-auto -mt-3 h-8 w-2 bg-purple-600"></div>
-						</div>
-						<p class="text-lg font-medium">Map Location</p>
-						<p class="text-sm text-gray-300">123 Tech Avenue, San Francisco</p>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </section>
@@ -223,30 +202,6 @@
 					finance, retail, and manufacturing. Our diverse team brings industry-specific knowledge to
 					each project we undertake.
 				</p>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Newsletter Subscribe -->
-<section class="px-4 py-16 text-center backdrop-blur-sm md:py-24">
-	<div class="container mx-auto max-w-3xl">
-		<h2 class="mb-6 text-3xl font-bold">Stay Updated</h2>
-		<p class="mb-8 text-xl text-gray-300">
-			Subscribe to our newsletter for the latest AI insights and industry updates.
-		</p>
-		<div class="mx-auto max-w-md">
-			<div class="flex flex-col sm:flex-row">
-				<input
-					type="email"
-					placeholder="Enter your email"
-					class="mb-2 w-full flex-grow rounded-md border border-indigo-800 bg-indigo-950/40 px-4 py-3 focus:ring-2 focus:ring-purple-600 focus:outline-none sm:mb-0 sm:rounded-l-md sm:rounded-r-none"
-				/>
-				<button
-					class="w-full flex-shrink-0 rounded-md bg-purple-600 px-6 py-3 whitespace-nowrap transition hover:bg-purple-700 sm:w-auto sm:rounded-l-none sm:whitespace-normal"
-				>
-					Subscribe
-				</button>
 			</div>
 		</div>
 	</div>
