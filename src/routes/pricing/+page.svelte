@@ -50,30 +50,34 @@
 				class="flex flex-col rounded-lg border border-purple-900/30 bg-indigo-950/40 p-8 backdrop-blur-sm"
 			>
 				<h3 class="mb-2 text-xl font-bold">Starter</h3>
-				<p class="mb-6 text-gray-300">For businesses beginning their AI journey</p>
+				<p class="mb-6 text-gray-300">For businesses beginning their AI journey.</p>
 				<div class="mb-2 text-4xl font-bold">
-					{isAnnual ? '$1,200' : '$1,500'}
+					{isAnnual ? '$1,300' : '$300'}
 					<span class="text-base font-normal text-gray-400">
 						{isAnnual ? '/year' : '/month'}
 					</span>
 				</div>
-				<p class="mb-6 text-sm text-gray-400">Single project implementation</p>
+				<p class="mb-6 text-sm text-gray-400">Single project implementation.</p>
 				<ul class="mb-8 space-y-3">
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>AI readiness assessment</span>
+						<span>AI readiness assessment.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>Basic implementation plan</span>
+						<span>Basic implementation plan.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>10 hours consulting support</span>
+						<span>Application Deployment.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>Email support</span>
+						<span>40 hours consulting support.</span>
+					</li>
+					<li class="flex items-start">
+						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
+						<span>Email support anytime.</span>
 					</li>
 				</ul>
 				<a
@@ -89,34 +93,34 @@
 				class="relative flex flex-col rounded-lg border border-purple-600/50 bg-indigo-950/40 p-8 backdrop-blur-sm"
 			>
 				<h3 class="mb-2 text-xl font-bold">Professional</h3>
-				<p class="mb-6 text-gray-300">For growing businesses with specific AI needs</p>
+				<p class="mb-6 text-gray-300">For growing businesses with specific AI needs.</p>
 				<div class="mb-2 text-4xl font-bold">
-					{isAnnual ? '$7,600' : '$9,500'}
+					{isAnnual ? '$5,000' : '$700'}
 					<span class="text-base font-normal text-gray-400">
 						{isAnnual ? '/year' : '/month'}
 					</span>
 				</div>
-				<p class="mb-6 text-sm text-gray-400">Ongoing implementation & support</p>
+				<p class="mb-6 text-sm text-gray-400">Ongoing implementation & support.</p>
 				<ul class="mb-8 space-y-3">
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>All Starter features</span>
+						<span>All Starter features.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>Comprehensive strategy development</span>
+						<span>Comprehensive strategy development.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>40 hours consulting support</span>
+						<span>80 hours consulting support.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>Priority support with 24hr response</span>
+						<span>Priority support with 24hr response.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>Quarterly progress reviews</span>
+						<span>Quarterly progress reviews.</span>
 					</li>
 				</ul>
 				<a
@@ -132,32 +136,32 @@
 				class="flex flex-col rounded-lg border border-purple-900/30 bg-indigo-950/40 p-8 backdrop-blur-sm"
 			>
 				<h3 class="mb-2 text-xl font-bold">Enterprise</h3>
-				<p class="mb-6 text-gray-300">For organizations with complex AI requirements</p>
+				<p class="mb-6 text-gray-300">For organizations with complex AI requirements.</p>
 				<div class="mb-2 text-4xl font-bold">
 					Custom
 					<span class="text-base font-normal text-gray-400"></span>
 				</div>
-				<p class="mb-6 text-sm text-gray-400">Tailored to your specific needs</p>
+				<p class="mb-6 text-sm text-gray-400">Tailored to your specific needs.</p>
 				<ul class="mb-8 space-y-3">
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>All Professional features</span>
+						<span>All Professional features.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>Dedicated strategy team</span>
+						<span>Dedicated strategy team.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>Unlimited consulting hours</span>
+						<span>Unlimited consulting hours.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>24/7 priority support</span>
+						<span>24/7 priority support.</span>
 					</li>
 					<li class="flex items-start">
 						<div class="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 rounded-full bg-purple-600"></div>
-						<span>Monthly executive briefings</span>
+						<span>Monthly executive briefings.</span>
 					</li>
 				</ul>
 				<a

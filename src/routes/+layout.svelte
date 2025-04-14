@@ -123,27 +123,6 @@
 							Specialized AI consulting services helping businesses implement practical AI
 							strategies that drive measurable results.
 						</p>
-						<!-- Social Links -->
-						<div class="flex space-x-4">
-							<a
-								href="#"
-								class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-900/60 transition hover:bg-purple-600"
-							>
-								<div class="h-5 w-5 rounded-full bg-gray-300"></div>
-							</a>
-							<a
-								href="#"
-								class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-900/60 transition hover:bg-purple-600"
-							>
-								<div class="h-5 w-5 rounded-full bg-gray-300"></div>
-							</a>
-							<a
-								href="#"
-								class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-900/60 transition hover:bg-purple-600"
-							>
-								<div class="h-5 w-5 rounded-full bg-gray-300"></div>
-							</a>
-						</div>
 					</div>
 
 					<!-- Navigation Links -->
@@ -152,58 +131,10 @@
 							<h4 class="mb-4 text-lg font-semibold text-white">Company</h4>
 							<ul class="space-y-3">
 								<li>
+									<a href="/pricing" class="text-gray-300 transition hover:text-purple-400">Pricing</a>
+								</li>
+								<li>
 									<a href="/about" class="text-gray-300 transition hover:text-purple-400">About</a>
-								</li>
-								<li>
-									<a href="/careers" class="text-gray-300 transition hover:text-purple-400"
-										>Careers</a
-									>
-								</li>
-								<li>
-									<a href="/blog" class="text-gray-300 transition hover:text-purple-400">Blog</a>
-								</li>
-							</ul>
-						</div>
-						<div>
-							<h4 class="mb-4 text-lg font-semibold text-white">Solutions</h4>
-							<ul class="space-y-3">
-								<li>
-									<a
-										href="/solutions#strategy"
-										class="text-gray-300 transition hover:text-purple-400">Strategy</a
-									>
-								</li>
-								<li>
-									<a
-										href="/solutions#development"
-										class="text-gray-300 transition hover:text-purple-400">Development</a
-									>
-								</li>
-								<li>
-									<a
-										href="/solutions#implementation"
-										class="text-gray-300 transition hover:text-purple-400">Implementation</a
-									>
-								</li>
-							</ul>
-						</div>
-						<div>
-							<h4 class="mb-4 text-lg font-semibold text-white">Resources</h4>
-							<ul class="space-y-3">
-								<li>
-									<a href="/resources" class="text-gray-300 transition hover:text-purple-400"
-										>Case Studies</a
-									>
-								</li>
-								<li>
-									<a href="/resources#guides" class="text-gray-300 transition hover:text-purple-400"
-										>Guides</a
-									>
-								</li>
-								<li>
-									<a href="/resources#faq" class="text-gray-300 transition hover:text-purple-400"
-										>FAQ</a
-									>
 								</li>
 							</ul>
 						</div>
@@ -216,16 +147,13 @@
 									>
 								</li>
 								<li>
-									<a
-										href="mailto:info@callandgrande.com"
-										class="text-gray-300 transition hover:text-purple-400">info@callandgrande.com</a
-									>
+									<a href="mailto:info@callgran.com" class="text-gray-300 transition hover:text-purple-400">
+										info@callgran.com
+									</a>
 								</li>
-								<li>
-									<a href="tel:+14155550123" class="text-gray-300 transition hover:text-purple-400"
-										>+1 (415) 555-0123</a
-									>
-								</li>
+								<a href="tel:+16187035999" class="text-gray-300 transition hover:text-purple-400">
+									+1 (618) 703-5999
+								  </a>
 							</ul>
 						</div>
 					</div>
@@ -237,12 +165,6 @@
 				>
 					<p class="mb-4 text-gray-400 md:mb-0">© 2025 Call & Grande. All rights reserved.</p>
 					<div class="flex space-x-8">
-						<a href="/privacy" class="text-gray-300 transition hover:text-purple-400"
-							>Privacy Policy</a
-						>
-						<a href="/terms" class="text-gray-300 transition hover:text-purple-400"
-							>Terms of Service</a
-						>
 					</div>
 				</div>
 			</div>
