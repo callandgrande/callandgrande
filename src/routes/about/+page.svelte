@@ -21,13 +21,13 @@
 			<div class="order-2 md:order-1 md:w-1/2">
 				<h2 class="mb-6 text-3xl font-bold">Our Story</h2>
 				<p class="mb-4 text-gray-300">
-					Founded in 2025, Call & Grande was born from a simple insight: businesses don’t just need AI—they need a strategy for AI. Recognizing this critical gap, co-founders Joseph Call and Alvaro M. Grande combined their expertise in data science and business strategy to build a consultancy that transforms cutting-edge AI into real-world business value.
+					Founded in 2025, Call & Grande was born from a simple insight: businesses don't just need AI—they need a strategy for AI. Recognizing this critical gap, co-founders Joseph Call and Alvaro M. Grande combined their expertise in data science and business strategy to build a consultancy that transforms cutting-edge AI into real-world business value.
 				</p>
 				<p class="mb-4 text-gray-300">
 					At Call & Grande, we specialize in turning complex AI concepts into measurable results. With a foundation in advanced research and hands-on industry experience, we help organizations harness emerging technologies before they become mainstream—giving our clients a powerful competitive edge.
 				</p>
 				<p class="text-gray-300">
-					We don’t just implement tools; we deliver end-to-end solutions rooted in rigorous research, state-of-the-art AI capabilities, and sharp strategic insight. Our mission is simple: to solve your toughest challenges with intelligent, actionable solutions that move your business forward.
+					We don't just implement tools; we deliver end-to-end solutions rooted in rigorous research, state-of-the-art AI capabilities, and sharp strategic insight. Our mission is simple: to solve your toughest challenges with intelligent, actionable solutions that move your business forward.
 				</p>
 			</div>
 			<div class="order-1 mb-8 md:order-2 md:mb-0 md:w-1/2">
@@ -88,6 +88,14 @@
 				</div>
 				<h3 class="text-xl font-bold">Joseph Call</h3>
 				<p class="text-gray-400">Co-Founder & Managing Partner</p>
+				<!-- LinkedIn Icon -->
+				<div class="mt-2">
+					<a href="https://www.linkedin.com/in/jbcallv/" target="_blank" rel="noopener noreferrer" class="inline-block text-indigo-400 hover:text-purple-400 transition">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+						</svg>
+					</a>
+				</div>
 			</div>
 
 			<!-- Team Member 2 -->
@@ -98,6 +106,14 @@
 				</div>
 				<h3 class="text-xl font-bold">Martin Grande</h3>
 				<p class="text-gray-400">Co-Founder & Managing Partner</p>
+				<!-- LinkedIn Icon -->
+				<div class="mt-2">
+					<a href="https://www.linkedin.com/in/alvaromartingrande/" target="_blank" rel="noopener noreferrer" class="inline-block text-indigo-400 hover:text-purple-400 transition">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+						</svg>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
