@@ -103,7 +103,7 @@
 					</div>
 				{:else}
 					<form 
-						action="https://formsubmit.co/mgrande@callgran.com" 
+						action="https://formsubmit.co/info@callgran.com" 
 						method="POST" 
 						on:submit={handleSubmit} 
 						class="space-y-6"
