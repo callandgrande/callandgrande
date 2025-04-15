@@ -21,22 +21,19 @@
 		if (emailParam) {
 			email = emailParam;
 		}
+		
+		// Check if form was submitted successfully (after redirect from FormSubmit)
+		const thanksParam = urlParams.get('thanks');
+		if (thanksParam === 'true') {
+			submitted = true;
+		}
 	});
 
+	// Form is now handled by FormSubmit directly
+	// handleSubmit is only used for UI state management before form submission
 	const handleSubmit = () => {
 		submitting = true;
-
-		// Simulate form submission
-		setTimeout(() => {
-			submitting = false;
-			submitted = true;
-
-			// Reset form
-			name = '';
-			email = '';
-			company = '';
-			message = '';
-		}, 1000);
+		// The actual submission is handled by the form's action
 	};
 </script>
 
@@ -100,18 +97,31 @@
 				<h2 class="mb-8 text-3xl font-bold text-center">Send Us a Message</h2>
 
 				{#if submitted}
-					<div class="mb-8 rounded-lg border border-green-600 bg-green-500/20 p-6">
-						<h3 class="mb-2 text-xl font-bold">Thank You!</h3>
-						<p>Your message has been sent. We'll get back to you shortly.</p>
+					<div class="mb-8 rounded-lg border border-green-700/50 bg-green-950/70 p-8 text-center">
+						<h3 class="mb-4 text-3xl font-bold">Thank You!</h3>
+						<p class="text-xl">Your message has been sent. We'll get back to you shortly.</p>
 					</div>
 				{:else}
-					<form on:submit|preventDefault={handleSubmit} class="space-y-6">
+					<form 
+						action="https://formsubmit.co/mgrande@callgran.com" 
+						method="POST" 
+						on:submit={handleSubmit} 
+						class="space-y-6"
+					>
+						<!-- FormSubmit Configuration -->
+						<input type="hidden" name="_subject" value="New message from website contact form">
+						<input type="hidden" name="_template" value="table">
+						<input type="hidden" name="_next" value="https://callgran.com/contact?thanks=true">
+						<input type="hidden" name="_autoresponse" value="Thank you for contacting us. We've received your message and will get back to you shortly.">
+						<input type="hidden" name="_captcha" value="false">
+
 						<!-- Name -->
 						<div>
 							<label for="name" class="mb-2 block text-sm font-medium">Your Name</label>
 							<input
 								type="text"
 								id="name"
+								name="name"
 								bind:value={name}
 								required
 								class="w-full rounded-md border border-indigo-800 bg-indigo-950/40 px-4 py-3 focus:ring-2 focus:ring-purple-600 focus:outline-none"
@@ -124,6 +134,7 @@
 							<input
 								type="email"
 								id="email"
+								name="email"
 								bind:value={email}
 								required
 								class="w-full rounded-md border border-indigo-800 bg-indigo-950/40 px-4 py-3 focus:ring-2 focus:ring-purple-600 focus:outline-none"
@@ -136,6 +147,7 @@
 							<input
 								type="text"
 								id="company"
+								name="company"
 								bind:value={company}
 								class="w-full rounded-md border border-indigo-800 bg-indigo-950/40 px-4 py-3 focus:ring-2 focus:ring-purple-600 focus:outline-none"
 							/>
@@ -146,6 +158,7 @@
 							<label for="message" class="mb-2 block text-sm font-medium">Your Message</label>
 							<textarea
 								id="message"
+								name="message"
 								bind:value={message}
 								required
 								rows="5"
