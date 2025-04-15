@@ -54,10 +54,11 @@
 <!-- Contact Information -->
 <section class="px-4 py-8 md:py-12">
 	<div class="container mx-auto max-w-6xl">
-		<div class="grid gap-8 md:grid-cols-3">
+		<!-- Changed grid to flex and added justify-center to center the cards -->
+		<div class="flex flex-col md:flex-row justify-center gap-8">
 			<!-- Email -->
 			<div
-				class="rounded-lg border border-purple-900/30 bg-indigo-950/40 p-6 text-center backdrop-blur-sm"
+				class="rounded-lg border border-purple-900/30 bg-indigo-950/40 p-6 text-center backdrop-blur-sm md:w-1/4"
 			>
 				<div
 					class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-600"
@@ -66,13 +67,13 @@
 					<!-- Simple email icon placeholder -->
 				</div>
 				<h3 class="mb-2 text-xl font-bold">Email Us</h3>
-				<p class="mb-2 text-gray-300">info@callgran.com</p>
-				<p class="text-gray-300">support@callgran.com</p>
+				<p class="mb-2 text-gray-300"><a href="mailto:info@callgran.com" class="hover:text-purple-400 transition">info@callgran.com</a></p>
+				<p class="text-gray-300"><a href="mailto:support@callgran.com" class="hover:text-purple-400 transition">support@callgran.com</a></p>
 			</div>
 
 			<!-- Phone -->
 			<div
-				class="rounded-lg border border-purple-900/30 bg-indigo-950/40 p-6 text-center backdrop-blur-sm"
+				class="rounded-lg border border-purple-900/30 bg-indigo-950/40 p-6 text-center backdrop-blur-sm md:w-1/4"
 			>
 				<div
 					class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-purple-500"
@@ -81,8 +82,8 @@
 					<!-- Simple phone icon placeholder -->
 				</div>
 				<h3 class="mb-2 text-xl font-bold">Call Us</h3>
-				<p class="mb-2 text-gray-300">+1 (757) 570-6407</p>
-				<p class="mb-2 text-gray-300">+1 (618) 703-5999</p>
+				<p class="mb-2 text-gray-300"><a href="tel:+17575706407" class="hover:text-purple-400 transition">+1 (757) 570-6407</a></p>
+				<p class="mb-2 text-gray-300"><a href="tel:+16187035999" class="hover:text-purple-400 transition">+1 (618) 703-5999</a></p>
 				<p class="text-gray-300">24/7 Support</p>
 			</div>
 		</div>
@@ -92,10 +93,11 @@
 <!-- Contact Form and Map -->
 <section class="px-4 py-16 backdrop-blur-sm md:py-24">
 	<div class="container mx-auto max-w-6xl">
-		<div class="flex flex-col gap-16 lg:flex-row">
-			<!-- Contact Form -->
-			<div class="lg:w-1/2">
-				<h2 class="mb-8 text-3xl font-bold">Send Us a Message</h2>
+		<!-- Changed to center the form -->
+		<div class="flex justify-center">
+			<!-- Contact Form - Adjusted width and added mx-auto -->
+			<div class="w-full max-w-xl">
+				<h2 class="mb-8 text-3xl font-bold text-center">Send Us a Message</h2>
 
 				{#if submitted}
 					<div class="mb-8 rounded-lg border border-green-600 bg-green-500/20 p-6">

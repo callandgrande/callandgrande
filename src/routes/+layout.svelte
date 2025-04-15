@@ -5,6 +5,7 @@
 	let { children } = $props();
 	let canvas;
 	let dots = [];
+	let animationFrame;
 
 	// Animation for the dots
 	onMount(() => {
@@ -14,17 +15,23 @@
 		const width = (canvas.width = window.innerWidth);
 		const height = (canvas.height = window.innerHeight);
 
-		// Create dots
-		for (let i = 0; i < 100; i++) {
-			dots.push({
-				x: Math.random() * width,
-				y: Math.random() * height,
-				radius: Math.random() * 1.5 + 1.5,
-				vx: Math.random() * 0.5 - 0.25,
-				vy: Math.random() * 0.5 - 0.25,
-				opacity: Math.random() * 0.5 + 0.1
-			});
+		// Function to create dots
+		function createDots() {
+			dots = [];
+			for (let i = 0; i < 100; i++) {
+				dots.push({
+					x: Math.random() * width,
+					y: Math.random() * height,
+					radius: Math.random() * 1.5 + 1.5,
+					vx: Math.random() * 0.5 - 0.25,
+					vy: Math.random() * 0.5 - 0.25,
+					opacity: Math.random() * 0.5 + 0.1
+				});
+			}
 		}
+
+		// Initial creation of dots
+		createDots();
 
 		function animate() {
 			ctx.clearRect(0, 0, width, height);
@@ -49,21 +56,36 @@
 				ctx.fill();
 			}
 
-			requestAnimationFrame(animate);
+			animationFrame = requestAnimationFrame(animate);
 		}
 
 		animate();
 
 		// Handle resize
 		const handleResize = () => {
+			// Cancel the current animation frame to prevent multiple animations
+			if (animationFrame) {
+				cancelAnimationFrame(animationFrame);
+			}
+			
+			// Update canvas dimensions
 			canvas.width = window.innerWidth;
 			canvas.height = window.innerHeight;
+			
+			// Recreate dots with new dimensions
+			createDots();
+			
+			// Restart animation
+			animate();
 		};
 
 		window.addEventListener('resize', handleResize);
 
 		return () => {
 			window.removeEventListener('resize', handleResize);
+			if (animationFrame) {
+				cancelAnimationFrame(animationFrame);
+			}
 		};
 	});
 </script>
@@ -115,7 +137,7 @@
 				<!-- Main Footer Content -->
 				<div class="flex flex-col justify-between gap-12 md:flex-row">
 					<!-- Company Info -->
-					<div class="md:w-1/3">
+					<div class="md:w-1/2">
 						<div class="mb-6">
 							<img src="images/logo.png" width="150" alt="logo" />
 						</div>
@@ -125,9 +147,9 @@
 						</p>
 					</div>
 
-					<!-- Navigation Links -->
-					<div class="grid grid-cols-2 gap-8 md:w-2/3 md:grid-cols-4">
-						<div>
+					<!-- Navigation Links - Now aligned to the right -->
+					<div class="grid grid-cols-2 gap-8 md:w-1/2 md:grid-cols-2 md:justify-items-end">
+						<div class="text-right">
 							<h4 class="mb-4 text-lg font-semibold text-white">Company</h4>
 							<ul class="space-y-3">
 								<li>
@@ -138,7 +160,7 @@
 								</li>
 							</ul>
 						</div>
-						<div>
+						<div class="text-right">
 							<h4 class="mb-4 text-lg font-semibold text-white">Contact</h4>
 							<ul class="space-y-3">
 								<li>
@@ -151,9 +173,11 @@
 										info@callgran.com
 									</a>
 								</li>
-								<a href="tel:+16187035999" class="text-gray-300 transition hover:text-purple-400">
-									+1 (618) 703-5999
-								  </a>
+								<li>
+									<a href="tel:+16187035999" class="text-gray-300 transition hover:text-purple-400">
+										+1 (618) 703-5999
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>

@@ -21,18 +21,13 @@
 			<div class="order-2 md:order-1 md:w-1/2">
 				<h2 class="mb-6 text-3xl font-bold">Our Story</h2>
 				<p class="mb-4 text-gray-300">
-					Founded in 2023, Call & Grande emerged from the recognition that businesses need more than
-					just AI tools—they need strategic guidance to integrate AI effectively.
+					Founded in 2025, Call & Grande was born from a simple insight: businesses don’t just need AI—they need a strategy for AI. Recognizing this critical gap, co-founders Joseph Call and Alvaro M. Grande combined their expertise in data science and business strategy to build a consultancy that transforms cutting-edge AI into real-world business value.
 				</p>
 				<p class="mb-4 text-gray-300">
-					Our founders, Joseph Call and Martin Grande, combined their expertise in data science and
-					business strategy to create a consultancy that bridges the gap between cutting-edge AI
-					technology and practical business applications.
+					At Call & Grande, we specialize in turning complex AI concepts into measurable results. With a foundation in advanced research and hands-on industry experience, we help organizations harness emerging technologies before they become mainstream—giving our clients a powerful competitive edge.
 				</p>
 				<p class="text-gray-300">
-					Today, we've helped over 50 companies across diverse industries implement AI solutions
-					that drive real business value, focusing on tailored strategies that align with each
-					client's unique goals and challenges.
+					We don’t just implement tools; we deliver end-to-end solutions rooted in rigorous research, state-of-the-art AI capabilities, and sharp strategic insight. Our mission is simple: to solve your toughest challenges with intelligent, actionable solutions that move your business forward.
 				</p>
 			</div>
 			<div class="order-1 mb-8 md:order-2 md:mb-0 md:w-1/2">
