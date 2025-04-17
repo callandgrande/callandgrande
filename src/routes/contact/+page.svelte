@@ -80,7 +80,6 @@
 				</div>
 				<h3 class="mb-2 text-xl font-bold">Call Us</h3>
 				<p class="mb-2 text-gray-300"><a href="tel:+17575706407" class="hover:text-purple-400 transition">+1 (757) 570-6407</a></p>
-				<p class="mb-2 text-gray-300"><a href="tel:+16187035999" class="hover:text-purple-400 transition">+1 (618) 703-5999</a></p>
 				<p class="text-gray-300">24/7 Support</p>
 			</div>
 		</div>
