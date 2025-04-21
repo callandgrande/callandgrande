@@ -123,14 +123,14 @@
 			<div class="text-center">
 				<!-- Placeholder for team member photo -->
 				<div class="mx-auto mb-4 flex h-40 w-40 items-center justify-center rounded-full">
-					<img src="images/headshots/image.png" alt="Donald Headshot" class="rounded-full" />
+					<img src="images/headshots/alvaro.jpg" alt="Alvaro Headshot" class="rounded-full" />
 				</div>
-				<h3 class="text-xl font-bold">Levery Donald</h3>
-				<p class="text-gray-400">Co-Founder & Managing Partner</p>
+				<h3 class="text-xl font-bold">Alvaro Martin Grande</h3>
+				<p class="text-gray-400">Co-Founder</p>
 				<!-- LinkedIn Icon -->
 				<div class="mt-2">
 					<a
-						href="https://www.linkedin.com/in/dun/"
+						href="https://www.linkedin.com/in/alvaromartingrande/"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="inline-block text-indigo-400 transition hover:text-purple-400"
